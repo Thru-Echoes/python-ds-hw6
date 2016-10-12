@@ -5,6 +5,17 @@ from flask_bootstrap import Bootstrap
 import os
 from static.py.bibUtil import *
 
+import errno
+
+def makePathExist(path):
+    try:
+        os.makedirs(path)
+    except OSError as exception:
+        if exception.errno != errno.EEXIST:
+            raise
+
+makePathExist('static/db')
+
 ############################################################
 ############################################################
 ############################################################
