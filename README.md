@@ -10,5 +10,13 @@ Start up this Flask based web app with the following:
 
 And then head over to your favorite browser and go to URL **localhost:8888**
 
+This web app will generate a database directory with a <b>HW6.db</b> file.
 
-#### GREAT JOB! 
+Database generated at:
+
+```
+    /static/db/HW6.db
+```
+
+
+#### GREAT JOB!
